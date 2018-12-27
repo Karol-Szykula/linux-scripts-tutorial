@@ -1,9 +1,8 @@
 #!/bin/bash
 
 
-if [ "$1" = witaj ];then
-	echo 'This is first test' 
-fi
-if [ x"$1" = x"witaj" ]; then
-	echo 'this is second test'
-fi
+if grep -q daemon /etc/passwd; then
+	echo 'In file "passwd" is noticed about user daemon.'
+else
+	echo 'There is not'
+fi	
