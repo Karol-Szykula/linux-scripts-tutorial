@@ -1,4 +1,6 @@
 #!/bin/bash
 
-echo $0: process: $$ \
-	exit code: $?
+
+if [ "foo" = "foo" ]; then
+               echo expression evaluated as tru
+       fi
